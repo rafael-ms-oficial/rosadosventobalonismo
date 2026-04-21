@@ -18,7 +18,8 @@ const SITE = {
       name: 'Voo Exclusivo Casal',
       description: 'Uma experiência romântica e inesquecível para dois, com voo privativo ao nascer do sol, brinde especial e total exclusividade para celebrar momentos únicos nas alturas.',
       priceMain: 'R$ 2.745,00',
-      priceInstallments: '7x R$379,50',
+      installmentsQty: '7x',
+      installmentsValue: 'R$379,50',
       priceLabel: 'casal',
       featured: false,
       highlights: [
@@ -34,7 +35,7 @@ const SITE = {
         'Atendimento premium',
       ],
       notice: 'Experiência totalmente privada! Cancelamento com até 24 horas antes do seu voo gratuitamente.',
-      waMsg: 'Olá! Gostaria de informações para reservar um Voo Exclusivo para casal na Rosa dos Ventos Balonismo. Quais são as datas disponíveis?',
+      waMsg: 'Olá! Vi o Voo Exclusivo Casal (R$2.745) na página e gostaria de reservar. Quais são as próximas datas disponíveis?',
     },
     {
       id: 'compartilhado',
@@ -42,7 +43,8 @@ const SITE = {
       badge: 'MAIS VENDIDO',
       description: 'A opção ideal para quem deseja viver a emoção do balonismo em grupo, compartilhando o céu, as paisagens e a magia do nascer do sol.',
       priceMain: 'R$ 640,00',
-      priceInstallments: '5x R$119,00',
+      installmentsQty: '5x',
+      installmentsValue: 'R$119,00',
       priceLabel: 'por pessoa',
       featured: true,
       highlights: [
@@ -56,14 +58,15 @@ const SITE = {
         'Brinde com espumante',
       ],
       notice: 'Voos compartilhados realizados mediante formação de grupo mínimo de passageiros.',
-      waMsg: 'Olá! Gostaria de reservar um Voo Compartilhado de balão na Rosa dos Ventos Balonismo. Poderia me informar as próximas datas disponíveis?',
+      waMsg: 'Olá! Vi o Voo Compartilhado (R$640 por pessoa) na página e quero saber as próximas datas disponíveis.',
     },
     {
       id: 'familia',
       name: 'Voo Exclusivo Família',
       description: 'Viva momentos especiais com quem você ama em um voo privativo e seguro, com conforto, paisagens deslumbrantes e uma experiência pensada para toda a família.',
       priceMain: 'R$ 790,00',
-      priceInstallments: '6x R$115,00',
+      installmentsQty: '6x',
+      installmentsValue: 'R$115,00',
       priceLabel: 'por pessoa',
       featured: false,
       highlights: [
@@ -79,7 +82,7 @@ const SITE = {
         'Seguro aventura',
       ],
       notice: 'Balão reservado exclusivamente para o seu grupo. Ideal para viver uma aventura em família.',
-      waMsg: 'Olá! Gostaria de reservar um Voo Exclusivo para família na Rosa dos Ventos Balonismo. Poderia me informar valores e disponibilidade?',
+      waMsg: 'Olá! Vi o Voo Exclusivo Família (R$790 por pessoa) na página e gostaria de reservar. Quais são as datas disponíveis?',
     },
   ],
 

@@ -78,11 +78,18 @@ function renderPackages() {
         <h3 class="package-card__name">${pkg.name}</h3>
         <p class="package-card__description">${pkg.description}</p>
 
-        <div class="package-card__price-main">${pkg.priceMain}</div>
-        <p class="package-card__price-sub">
-          Experiência a partir de <strong>${pkg.priceInstallments}</strong>
-          &nbsp;/ Sem juros &nbsp;<span>${pkg.priceLabel}</span>
-        </p>
+        <div class="pkg-price">
+          <div class="pkg-price__original">${pkg.priceMain}</div>
+          <div class="pkg-installments">
+            <div class="pkg-installments__label">Experiência a partir de</div>
+            <div class="pkg-installments__row">
+              <span class="pkg-installments__qty">${pkg.installmentsQty}</span>
+              <span class="pkg-installments__value">${pkg.installmentsValue}</span>
+              <span class="pkg-installments__suffix">/ Sem juros</span>
+            </div>
+            <span class="pkg-installments__sublabel">${pkg.priceLabel}</span>
+          </div>
+        </div>
 
         <div class="package-card__highlights">
           ${pkg.highlights.map(h => `
