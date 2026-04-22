@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voo de Balão no Festival de Torres — Rosa dos Ventos Balonismo</title>
+  <meta name="description" content="Voe durante o maior festival de balonismo da América Latina. 110+ balões no céu, nascer do sol, espumante e fotos inclusas. Vagas limitadas — garante a sua.">
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-WWC5HSD8');</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@700;800;900&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <style>
+    /* ===================================================
+       FESTIVAL TORRES — Estilos específicos desta página
+       Complementa o design system do styles.css principal
+    =================================================== */
+
+    /* Urgency bar */
+    .urgency-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1100;
+      background: var(--gold);
+      color: #000;
+      text-align: center;
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+      padding: 8px 16px;
+      line-height: 1.3;
+    }
+
+    /* Push everything down for the bar */
+    body { padding-top: 38px; }
+    .nav { top: 38px; }
+
+    /* ---- HERO ---- */
+    .hero--festival .hero__inner { padding: 110px 24px 80px; }
+
+    .hero__eyebrow {
+      display: inline-block;
+      background: rgba(212,175,55,.18);
+      border: 1px solid rgba(212,175,55,.5);
+      color: var(--gold);
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 6px 16px;
+      border-radius: 100px;
+      margin-bottom: 24px;
+    }
+
+    .hero__headline {
+      font-family: var(--font-heading);
+      font-size: clamp(2rem, 5vw, 3.6rem);
+      font-weight: 900;
+      color: #fff;
+      line-height: 1.1;
+      margin-bottom: 20px;
+      max-width: 820px;
+    }
+
+    .hero__sub {
+      font-size: clamp(1rem, 2vw, 1.2rem);
+      color: rgba(255,255,255,.82);
+      line-height: 1.65;
+      max-width: 640px;
+      margin-bottom: 36px;
+    }
+
+    .hero__badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 36px;
+    }
+
+    .hero__badge {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      background: rgba(255,255,255,.1);
+      border: 1px solid rgba(255,255,255,.2);
+      color: #fff;
+      font-size: 0.8rem;
+      padding: 7px 14px;
+      border-radius: 100px;
+      backdrop-filter: blur(4px);
+    }
+
+    .hero__badge i { color: var(--gold); font-size: 0.85rem; }
+
+    .hero__cta-wrap { display: flex; flex-direction: column; align-items: flex-start; gap: 12px; }
+
+    .btn--lg {
+      font-size: 1rem;
+      padding: 16px 32px;
+      gap: 10px;
+    }
+
+    .btn--full { width: 100%; justify-content: center; }
+
+    .hero__cta-sub {
+      font-size: 0.78rem;
+      color: rgba(255,255,255,.65);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin: 0;
+    }
+
+    /* ---- STATS ---- */
+    .stats-section {
+      background: var(--dark);
+      padding: 48px 0;
+      border-top: 1px solid rgba(212,175,55,.2);
+      border-bottom: 1px solid rgba(212,175,55,.2);
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    @media (min-width: 640px) { .stats-grid { grid-template-columns: repeat(4, 1fr); } }
+
+    .stat-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 28px 16px;
+      border-right: 1px solid rgba(255,255,255,.08);
+    }
+
+    .stat-item:last-child { border-right: none; }
+
+    .stat-item__value {
+      font-family: var(--font-heading);
+      font-size: 2.4rem;
+      font-weight: 800;
+      color: var(--gold);
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+
+    .stat-item__label {
+      font-size: 0.78rem;
+      color: rgba(255,255,255,.55);
+      letter-spacing: 0.03em;
+      line-height: 1.3;
+    }
+
+    /* ---- SECTION HEADERS ---- */
+    .section-label {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 12px;
+    }
+
+    .section-title {
+      font-family: var(--font-heading);
+      font-size: clamp(1.7rem, 3.5vw, 2.6rem);
+      font-weight: 800;
+      color: var(--dark);
+      line-height: 1.15;
+      margin-bottom: 16px;
+    }
+
+    .section-title--light { color: #fff; }
+
+    .section-sub {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      line-height: 1.65;
+      max-width: 600px;
+    }
+
+    /* ---- PACKAGE BLOCK ---- */
+    .package-section { background: var(--bg-light); }
+
+    .package-section .container {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 48px;
+      align-items: start;
+    }
+
+    @media (min-width: 900px) {
+      .package-section .container { grid-template-columns: 1fr 1fr; }
+    }
+
+    .package-section__intro { padding-top: 8px; }
+    .package-section__intro .section-sub { max-width: 480px; }
+
+    .pkg-festival {
+      background: #fff;
+      border-radius: var(--radius-lg);
+      box-shadow: 0 8px 40px rgba(0,0,0,.1);
+      padding: 36px 32px 32px;
+      position: relative;
+      border-top: 4px solid var(--gold);
+    }
+
+    .pkg-festival__badge {
+      position: absolute;
+      top: -14px;
+      left: 24px;
+      background: var(--gold);
+      color: #000;
+      font-size: 0.65rem;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 5px 14px;
+      border-radius: 100px;
+    }
+
+    .pkg-festival__name {
+      font-family: var(--font-heading);
+      font-size: 1.35rem;
+      font-weight: 800;
+      color: var(--dark);
+      margin-bottom: 8px;
+    }
+
+    .pkg-festival__tagline {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.55;
+      margin-bottom: 20px;
+    }
+
+    .pkg-festival__meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 16px;
+      margin-bottom: 24px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .pkg-festival__meta span {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .pkg-festival__meta i { color: var(--gold); }
+
+    .pkg-festival__included {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 11px;
+    }
+
+    .pkg-festival__included li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: 0.9rem;
+      color: var(--text-dark);
+      line-height: 1.45;
+    }
+
+    .pkg-festival__included li i {
+      color: var(--gold);
+      font-size: 0.9rem;
+      margin-top: 2px;
+      flex-shrink: 0;
+    }
+
+    .pkg-festival__price {
+      margin-bottom: 24px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+    }
+
+    .pkg-festival__notice {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+      margin-top: 14px;
+      display: flex;
+      align-items: flex-start;
+      gap: 6px;
+    }
+
+    .pkg-festival__notice i { color: var(--gold); flex-shrink: 0; margin-top: 2px; }
+
+    /* ---- JOURNEY TIMELINE ---- */
+    .journey-section { background: #fff; }
+
+    .journey-list {
+      position: relative;
+      max-width: 680px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .journey-step {
+      display: grid;
+      grid-template-columns: 48px 1fr;
+      gap: 0 20px;
+      padding-bottom: 40px;
+      position: relative;
+    }
+
+    .journey-step:last-child { padding-bottom: 0; }
+
+    .journey-step__line {
+      position: absolute;
+      left: 24px;
+      top: 48px;
+      bottom: 0;
+      width: 2px;
+      background: linear-gradient(to bottom, var(--gold), rgba(212,175,55,.1));
+      transform: translateX(-50%);
+    }
+
+    .journey-step:last-child .journey-step__line { display: none; }
+
+    .journey-step__icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: var(--gold);
+      color: #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+      flex-shrink: 0;
+      position: relative;
+      z-index: 1;
+    }
+
+    .journey-step__body { padding-top: 10px; }
+
+    .journey-step__time {
+      display: inline-block;
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 4px;
+    }
+
+    .journey-step__title {
+      font-family: var(--font-heading);
+      font-size: 1.1rem;
+      font-weight: 800;
+      color: var(--dark);
+      margin-bottom: 6px;
+    }
+
+    .journey-step__desc {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      line-height: 1.65;
+    }
+
+    /* ---- DIFFERENTIALS ---- */
+    .differentials-section { background: var(--bg-light); }
+
+    .differentials-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+    }
+
+    .diff-card {
+      background: #fff;
+      border-radius: var(--radius);
+      padding: 28px 24px;
+      box-shadow: 0 2px 12px rgba(0,0,0,.06);
+      border-bottom: 3px solid transparent;
+      transition: border-color .2s, transform .2s;
+    }
+
+    .diff-card:hover {
+      border-color: var(--gold);
+      transform: translateY(-3px);
+    }
+
+    .diff-card__icon {
+      width: 44px;
+      height: 44px;
+      background: rgba(212,175,55,.1);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      color: var(--gold);
+      margin-bottom: 16px;
+    }
+
+    .diff-card__title {
+      font-family: var(--font-heading);
+      font-size: 1rem;
+      font-weight: 800;
+      color: var(--dark);
+      margin-bottom: 8px;
+    }
+
+    .diff-card__desc {
+      font-size: 0.87rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    /* ---- URGENCY BLOCK ---- */
+    .urgency-section {
+      background: #0B0B0B;
+      padding: 80px 0;
+      text-align: center;
+    }
+
+    .urgency__title {
+      font-family: var(--font-heading);
+      font-size: clamp(1.7rem, 3.5vw, 2.6rem);
+      font-weight: 900;
+      color: #fff;
+      margin-bottom: 8px;
+    }
+
+    .urgency__subtitle {
+      font-size: 1rem;
+      color: var(--gold);
+      margin-bottom: 36px;
+      font-weight: 600;
+    }
+
+    .urgency__list {
+      list-style: none;
+      padding: 0;
+      margin: 0 auto 40px;
+      max-width: 520px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      text-align: left;
+    }
+
+    .urgency__list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: 0.95rem;
+      color: rgba(255,255,255,.8);
+      line-height: 1.5;
+    }
+
+    .urgency__list li i {
+      color: #e55;
+      flex-shrink: 0;
+      margin-top: 3px;
+    }
+
+    /* ---- AUDIENCES ---- */
+    .audiences-section { background: #fff; }
+
+    .audiences-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+    }
+
+    .audience-card {
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 32px 28px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      transition: box-shadow .2s, border-color .2s;
+    }
+
+    .audience-card:hover {
+      box-shadow: 0 8px 32px rgba(0,0,0,.1);
+      border-color: var(--gold);
+    }
+
+    .audience-card__icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      background: rgba(212,175,55,.12);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      color: var(--gold);
+    }
+
+    .audience-card__title {
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+
+    .audience-card__headline {
+      font-family: var(--font-heading);
+      font-size: 1.1rem;
+      font-weight: 800;
+      color: var(--dark);
+      line-height: 1.25;
+    }
+
+    .audience-card__desc {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      line-height: 1.65;
+      flex: 1;
+    }
+
+    .btn--outline-gold {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      border: 2px solid var(--gold);
+      color: var(--gold);
+      background: transparent;
+      border-radius: var(--radius);
+      padding: 10px 20px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background .2s, color .2s;
+      width: fit-content;
+    }
+
+    .btn--outline-gold:hover {
+      background: var(--gold);
+      color: #000;
+    }
+
+    .audience-card .btn--outline-gold {
+      width: 100%;
+      justify-content: center;
+    }
+
+    /* ---- SAFETY ---- */
+    .safety-section { background: var(--bg-light); }
+
+    .safety-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 24px;
+    }
+
+    .safety-card {
+      background: #fff;
+      border-radius: var(--radius);
+      padding: 28px 24px;
+      box-shadow: 0 2px 12px rgba(0,0,0,.06);
+    }
+
+    .safety-card__icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      background: rgba(212,175,55,.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      color: var(--gold);
+      margin-bottom: 16px;
+    }
+
+    .safety-card__title {
+      font-family: var(--font-heading);
+      font-size: 0.95rem;
+      font-weight: 800;
+      color: var(--dark);
+      margin-bottom: 8px;
+    }
+
+    .safety-card__desc {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    /* ---- TESTIMONIALS ---- */
+    .testimonials-section { background: #fff; }
+
+    .testimonial-card__detail {
+      display: block;
+      font-size: 0.75rem;
+      color: var(--gold);
+      margin-top: 2px;
+    }
+
+    /* ---- FAQ ---- */
+    .faq-section { background: var(--bg-light); }
+
+    .faq-section .faq-list { max-width: 720px; margin: 0 auto; }
+
+    /* ---- CTA FINAL ---- */
+    .cta-final-section {
+      background: linear-gradient(135deg, #0B0B0B 0%, #1a1400 100%);
+      padding: 100px 0;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta-final-section::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at center, rgba(212,175,55,.08) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .cta-final__headline {
+      font-family: var(--font-heading);
+      font-size: clamp(1.8rem, 4vw, 3rem);
+      font-weight: 900;
+      color: #fff;
+      line-height: 1.15;
+      max-width: 700px;
+      margin: 0 auto 20px;
+    }
+
+    .cta-final__sub {
+      font-size: 1.05rem;
+      color: rgba(255,255,255,.7);
+      max-width: 500px;
+      margin: 0 auto 40px;
+      line-height: 1.65;
+    }
+
+    .cta-final__sub2 {
+      font-size: 0.78rem;
+      color: rgba(255,255,255,.4);
+      margin-top: 16px;
+      letter-spacing: 0.05em;
+    }
+
+    /* ---- FOOTER ---- */
+    .footer-festival {
+      background: #000;
+      padding: 40px 24px;
+      text-align: center;
+      border-top: 1px solid rgba(212,175,55,.15);
+    }
+
+    .footer-festival__logo {
+      height: 48px;
+      margin-bottom: 16px;
+    }
+
+    .footer-festival__tagline {
+      font-size: 0.82rem;
+      color: rgba(255,255,255,.4);
+      margin-bottom: 20px;
+    }
+
+    .footer-festival__social {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+
+    .footer-festival__social a {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      border: 1px solid rgba(255,255,255,.15);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgba(255,255,255,.5);
+      font-size: 0.9rem;
+      text-decoration: none;
+      transition: border-color .2s, color .2s;
+    }
+
+    .footer-festival__social a:hover { border-color: var(--gold); color: var(--gold); }
+
+    .footer-festival__copy {
+      font-size: 0.75rem;
+      color: rgba(255,255,255,.25);
+    }
+
+    /* ---- BUTTON SIZES ---- */
+    .btn--sm {
+      font-size: 0.78rem;
+      padding: 8px 18px;
+    }
+
+    /* ---- FAQ LIST wrapper ---- */
+    .faq-list { display: flex; flex-direction: column; gap: 0; }
+
+    /* ---- SECTION SPACING ---- */
+    .section { padding: 88px 0; }
+    .section--sm { padding: 64px 0; }
+
+    .section__header { margin-bottom: 52px; }
+    .section__header--center { text-align: center; }
+    .section__header--center .section-sub { margin-left: auto; margin-right: auto; }
+  </style>
+</head>
+<body>
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WWC5HSD8" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+  <!-- Urgency Bar -->
+  <div class="urgency-bar" id="urgency-bar" role="alert"></div>
+
+  <!-- Nav -->
+  <header class="nav" id="nav">
+    <div class="nav__inner container">
+      <a href="index.html" class="nav__logo">
+        <img src="https://rosadosventosbalonismo.com/wp-content/uploads/2026/02/rosadosventosbalonismo_branco.png"
+             alt="Rosa dos Ventos Balonismo" height="44">
+      </a>
+      <nav id="nav-links" class="nav__links" aria-label="Navegação principal">
+        <a href="#pacote"       class="nav__link">O Pacote</a>
+        <a href="#jornada"      class="nav__link">A Experiência</a>
+        <a href="#para-quem"    class="nav__link">Para Quem É</a>
+        <a href="#seguranca"    class="nav__link">Segurança</a>
+        <a href="#faq"          class="nav__link">Dúvidas</a>
+        <a href="#cta-final" class="btn btn--gold btn--sm">Garantir vaga</a>
+      </nav>
+      <button id="nav-toggle" class="nav__toggle" aria-label="Abrir menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero hero--festival" aria-label="Festival Internacional de Balonismo">
+    <div id="hero-slideshow" class="hero__slideshow" aria-hidden="true"></div>
+    <div class="hero__overlay"></div>
+    <div class="hero__inner container">
+      <div id="hero-content"></div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats-section" aria-label="Números da experiência">
+    <div id="stats-grid" class="stats-grid container"></div>
+  </section>
+
+  <!-- PACOTE -->
+  <section id="pacote" class="section package-section" aria-labelledby="pacote-title">
+    <div class="container">
+      <div class="package-section__intro">
+        <span class="section-label">O que está incluso</span>
+        <h2 class="section-title" id="pacote-title">Tudo que você precisa para voar no festival. Sem surpresas.</h2>
+        <p class="section-sub">Um único pacote completo: transporte, voo, fotos, espumante e seguro aventura. Você só precisa aparecer — a gente cuida do resto.</p>
+        <div style="margin-top: 32px; display: flex; flex-direction: column; gap: 12px;">
+          <div style="display:flex;align-items:center;gap:10px;font-size:.9rem;color:var(--text-muted)">
+            <i class="fas fa-check-circle" style="color:var(--gold)"></i>
+            Voos realizados apenas em condições seguras — ANAC
+          </div>
+          <div style="display:flex;align-items:center;gap:10px;font-size:.9rem;color:var(--text-muted)">
+            <i class="fas fa-check-circle" style="color:var(--gold)"></i>
+            Cancelamento sem custo com antecedência
+          </div>
+          <div style="display:flex;align-items:center;gap:10px;font-size:.9rem;color:var(--text-muted)">
+            <i class="fas fa-check-circle" style="color:var(--gold)"></i>
+            Resposta rápida pelo WhatsApp
+          </div>
+        </div>
+      </div>
+      <div id="package-block"></div>
+    </div>
+  </section>
+
+  <!-- JORNADA -->
+  <section id="jornada" class="section journey-section" aria-labelledby="jornada-title">
+    <div class="container">
+      <div class="section__header section__header--center">
+        <span class="section-label">Como funciona</span>
+        <h2 class="section-title" id="jornada-title">Do amanhecer ao brinde — a jornada completa</h2>
+        <p class="section-sub">Cada detalhe foi pensado para que você aproveite ao máximo. Da chegada ao parque até o espumante após o pouso.</p>
+      </div>
+      <div id="journey-list" class="journey-list"></div>
+    </div>
+  </section>
+
+  <!-- DIFERENCIAIS -->
+  <section id="diferenciais" class="section differentials-section" aria-labelledby="diferenciais-title">
+    <div class="container">
+      <div class="section__header section__header--center">
+        <span class="section-label">Por que escolher</span>
+        <h2 class="section-title" id="diferenciais-title">Por que esse voo é diferente de tudo que você já viu</h2>
+        <p class="section-sub">Não existe outro lugar na América Latina onde você pode voar com 110+ balões ao redor. Isso é único. E é aqui.</p>
+      </div>
+      <div id="differentials-grid" class="differentials-grid"></div>
+    </div>
+  </section>
+
+  <!-- URGÊNCIA -->
+  <section class="urgency-section" aria-label="Vagas limitadas">
+    <div class="container">
+      <div id="urgency-block" style="max-width:600px;margin:0 auto;display:flex;flex-direction:column;align-items:center;gap:0"></div>
+    </div>
+  </section>
+
+  <!-- PARA QUEM É -->
+  <section id="para-quem" class="section audiences-section" aria-labelledby="para-quem-title">
+    <div class="container">
+      <div class="section__header section__header--center">
+        <span class="section-label">Para quem é essa experiência</span>
+        <h2 class="section-title" id="para-quem-title">Essa experiência foi feita para você — se você se encaixa em um desses perfis</h2>
+      </div>
+      <div id="audiences-grid" class="audiences-grid"></div>
+    </div>
+  </section>
+
+  <!-- DEPOIMENTOS -->
+  <section id="depoimentos" class="section testimonials-section" aria-labelledby="depoimentos-title">
+    <div class="container">
+      <div class="section__header section__header--center">
+        <span class="section-label">O que dizem quem já voou</span>
+        <h2 class="section-title" id="depoimentos-title">Palavras de quem viveu e não esquece</h2>
+      </div>
+      <div id="testimonials-grid" class="testimonials__grid"></div>
+    </div>
+  </section>
+
+  <!-- SEGURANÇA -->
+  <section id="seguranca" class="section safety-section" aria-labelledby="seguranca-title">
+    <div class="container">
+      <div class="section__header section__header--center">
+        <span class="section-label">Segurança em primeiro lugar</span>
+        <h2 class="section-title" id="seguranca-title">Você voa com segurança total. Isso não é promessa — é operação.</h2>
+        <p class="section-sub">Cada voo segue rigorosamente as normas da aviação civil brasileira. Não existe atalho quando se trata da sua segurança.</p>
+      </div>
+      <div id="safety-grid" class="safety-grid"></div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="section faq-section" aria-labelledby="faq-title">
+    <div class="container">
+      <div class="section__header section__header--center">
+        <span class="section-label">Dúvidas frequentes</span>
+        <h2 class="section-title" id="faq-title">Tudo que você precisa saber antes de voar</h2>
+      </div>
+      <div id="faq-list" class="faq-list"></div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section id="cta-final" class="cta-final-section" aria-label="Reservar agora">
+    <div class="container">
+      <div id="cta-final-block"></div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer-festival" role="contentinfo">
+    <img src="https://rosadosventosbalonismo.com/wp-content/uploads/2026/02/rosadosventosbalonismo_branco.png"
+         alt="Rosa dos Ventos Balonismo" class="footer-festival__logo">
+    <p class="footer-festival__tagline">O voo de balão mais especial da sua vida — no maior festival da América Latina.</p>
+    <div class="footer-festival__social">
+      <a href="https://www.instagram.com/rosadosventosbalonismo/" target="_blank" rel="noopener" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.facebook.com/p/Rosa-dos-ventos-balonismo-100077728352836/" target="_blank" rel="noopener" aria-label="Facebook">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://wa.me/5551997341719" target="_blank" rel="noopener" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+    </div>
+    <p class="footer-festival__copy">© 2026 Rosa dos Ventos Balonismo. Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- WhatsApp Float -->
+  <a href="https://wa.me/5551997341719?text=Ol%C3%A1%21%20Quero%20garantir%20minha%20vaga%20no%20voo%20de%20bal%C3%A3o%20durante%20o%20Festival%20de%20Torres."
+     class="wa-float" target="_blank" rel="noopener" aria-label="Falar pelo WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <script src="assets/js/data-torres.js"></script>
+  <script src="assets/js/main-torres.js"></script>
+</body>
+</html>
