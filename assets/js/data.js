@@ -5,11 +5,11 @@ const SITE = {
   facebook: 'https://www.facebook.com/p/Rosa-dos-ventos-balonismo-100077728352836/',
 
   heroSlides: [
-    'https://rosadosventosbalonismo.com/wp-content/uploads/2026/02/2023-07-26-Voo-Balao-104-scaled.jpg',
-    'https://rosadosventosbalonismo.com/wp-content/uploads/2026/02/IMG_8368-scaled.jpg',
-    'https://rosadosventosbalonismo.com/wp-content/uploads/2026/02/IMG_4328-scaled.jpg',
-    'https://rosadosventosbalonismo.com/wp-content/uploads/2026/02/IMG_3895-scaled.jpg',
-    'https://rosadosventosbalonismo.com/wp-content/uploads/2026/02/hot-air-balloon-flies-mountain-landscape-scaled.jpg',
+    'assets/img/hero/6170ceb4-6e37-4e0d-8b72-c33e19059e5e.jpg',
+  ],
+
+  ctaSlides: [
+    'assets/img/hero/balonismo-cta.jpg',
   ],
 
   packages: [
@@ -106,32 +106,32 @@ const SITE = {
 
   experiences: [
     {
-      img: 'https://rosadosventosbalonismo.com/wp-content/uploads/2026/02/IMG_4174-1024x683.jpg',
+      img: 'assets/img/experiences/IMG_4174.JPG',
       title: 'Piloto certificado ANAC',
       desc: 'Profissionalismo e experiência que fazem toda a diferença.',
     },
     {
-      img: 'https://rosadosventosbalonismo.com/wp-content/uploads/2026/02/2023-07-26-Voo-Balao-104-1024x683.jpg',
+      img: 'assets/img/hero/6170ceb4-6e37-4e0d-8b72-c33e19059e5e.jpg',
       title: 'Vista Panorâmica',
       desc: 'Um cenário deslumbrante que poucos têm o privilégio de viver.',
     },
     {
-      img: 'https://rosadosventosbalonismo.com/wp-content/uploads/2026/02/6247b566-d3c1-4a90-864a-86a5f1182e61-682x1024.jpg',
+      img: 'assets/img/experiences/6247b566-d3c1-4a90-864a-86a5f1182e61.jpg',
       title: 'Fotos e vídeos',
       desc: 'Memórias eternizadas com qualidade profissional.',
     },
     {
-      img: 'https://rosadosventosbalonismo.com/wp-content/uploads/2026/02/freepik__casal-brindando-com-taca-de-espumante-em-solo-e-a-__79240.png',
+      img: 'assets/img/experiences/freepik__casal-brindando-com-taca-de-espumante-em-solo-e-a-__79240.png.png',
       title: 'Brinde com Espumante',
       desc: 'Celebre a vida com uma vista extraordinária.',
     },
     {
-      img: 'https://rosadosventosbalonismo.com/wp-content/uploads/2026/02/siga-nosso-instagram.jpg',
+      img: 'assets/img/experiences/balonismo-cafe-colonial.jpg',
       title: 'Café Colonial',
       desc: 'Desfrute de um delicioso café cuidadosamente preparado.',
     },
     {
-      img: 'https://rosadosventosbalonismo.com/wp-content/uploads/2026/02/pexels-alfonso-escalante-1319242-2533092-1024x683.jpg',
+      img: 'assets/img/experiences/trasporte-local.jpeg',
       title: 'Transporte Local',
       desc: 'Sua aventura começa com conforto e tranquilidade.',
     },
@@ -141,32 +141,32 @@ const SITE = {
     {
       text: '"Viver a experiência de um voo de balão foi incrível! A vista da Grande Florianópolis é espetacular e a equipe foi super atenciosa. Recomendo a todos!"',
       name: 'João da Silva',
-      img: 'https://rosadosventosbalonismo.com/wp-content/uploads/2026/02/9122EE30-58D0-4772-B381-DAD8F08A55DC.png',
+      img: 'assets/img/brand/logo-rosa-dos-ventos-balonismo.png',
     },
     {
       text: '"Foi um passeio inesquecível, a sensação de flutuar no céu é indescritível! Uma experiência que com certeza quero repetir."',
       name: 'Maria Souza',
-      img: 'https://rosadosventosbalonismo.com/wp-content/uploads/2026/02/267DAD55-8871-4D58-9AD4-09C43B4F48DD.jpg',
+      img: 'assets/img/brand/logo-rosa-dos-ventos-balonismo.png',
     },
     {
       text: '"A experiência foi maravilhosa! Tudo foi muito bem organizado e a equipe transmitiu muita segurança. Valeu cada minuto."',
       name: 'Fernando Almeida',
-      img: 'https://rosadosventosbalonismo.com/wp-content/uploads/2026/02/67108654-8E10-4A54-8451-46529678BC24.jpg',
+      img: 'assets/img/brand/logo-rosa-dos-ventos-balonismo.png',
     },
     {
       text: '"Um momento mágico! A tranquilidade do voo e as paisagens lá de cima são de tirar o fôlego. A equipe é bem profissional e simpática."',
       name: 'Patrícia Lima',
-      img: 'https://rosadosventosbalonismo.com/wp-content/uploads/2026/02/D701DA1F-73DD-4E43-9456-664A3FA01E6D.jpg',
+      img: 'assets/img/brand/logo-rosa-dos-ventos-balonismo.png',
     },
   ],
 
   instagramPosts: [
-    { img: 'https://rosadosventosbalonismo.com/wp-content/uploads/2026/02/2023-07-26-Voo-Balao-104-1024x683.jpg',                        url: 'https://www.instagram.com/p/DW8sRWNDeng/', alt: 'Festival Internacional de Balonismo' },
-    { img: 'https://rosadosventosbalonismo.com/wp-content/uploads/2026/02/IMG_8368-scaled.jpg',                                          url: 'https://www.instagram.com/p/DUqlnr3kcK-/', alt: 'Certificação ANAC' },
-    { img: 'https://rosadosventosbalonismo.com/wp-content/uploads/2026/02/IMG_4328-scaled.jpg',                                          url: 'https://www.instagram.com/reel/DSOXwY7DWdS/', alt: 'Normativa ANAC 782/2025' },
-    { img: 'https://rosadosventosbalonismo.com/wp-content/uploads/2026/02/IMG_3895-scaled.jpg',                                          url: 'https://www.instagram.com/reel/DMlkDKRh7qn/', alt: 'Silêncio nas alturas' },
-    { img: 'https://rosadosventosbalonismo.com/wp-content/uploads/2026/02/men-women-hike-mountain-range-carefree-adventure-generated-by-ai-scaled.jpg', url: 'https://www.instagram.com/p/DMldeiNPFG1/', alt: 'Paisagem da Grande Florianópolis' },
-    { img: 'https://rosadosventosbalonismo.com/wp-content/uploads/2026/02/hot-air-balloon-flies-mountain-landscape-scaled.jpg',          url: 'https://www.instagram.com/p/DMi4tCJAoYY/', alt: 'Voo panorâmico' },
+    { img: 'assets/img/hero/6170ceb4-6e37-4e0d-8b72-c33e19059e5e.jpg',              url: 'https://www.instagram.com/p/DW8sRWNDeng/', alt: 'Festival Internacional de Balonismo' },
+    { img: 'assets/img/experiences/IMG_4174.JPG',                                  url: 'https://www.instagram.com/p/DUqlnr3kcK-/', alt: 'Certificação ANAC' },
+    { img: 'assets/img/experiences/trasporte-local.jpeg',                                       url: 'https://www.instagram.com/reel/DSOXwY7DWdS/', alt: 'Normativa ANAC 782/2025' },
+    { img: 'assets/img/experiences/6247b566-d3c1-4a90-864a-86a5f1182e61.jpg',       url: 'https://www.instagram.com/reel/DMlkDKRh7qn/', alt: 'Silêncio nas alturas' },
+    { img: 'assets/img/experiences/balonismo-cafe-colonial.jpg',                   url: 'https://www.instagram.com/p/DMldeiNPFG1/', alt: 'Paisagem da Grande Florianópolis' },
+    { img: 'assets/img/experiences/freepik__casal-brindando-com-taca-de-espumante-em-solo-e-a-__79240.png.png', url: 'https://www.instagram.com/p/DMi4tCJAoYY/', alt: 'Voo panorâmico' },
   ],
 
   faq: [

@@ -4,10 +4,7 @@ const FESTIVAL = {
   waDefault: 'Olá! Quero garantir minha vaga no voo de balão durante o Festival Internacional de Torres. Quais são as datas disponíveis e como faço a reserva?',
 
   heroSlides: [
-    'https://rosadosventosbalonismo.com/wp-content/uploads/2026/02/2023-07-26-Voo-Balao-104-scaled.jpg',
-    'https://rosadosventosbalonismo.com/wp-content/uploads/2026/02/IMG_8368-scaled.jpg',
-    'https://rosadosventosbalonismo.com/wp-content/uploads/2026/02/IMG_4328-scaled.jpg',
-    'https://rosadosventosbalonismo.com/wp-content/uploads/2026/02/hot-air-balloon-flies-mountain-landscape-scaled.jpg',
+    'assets/img/hero/6170ceb4-6e37-4e0d-8b72-c33e19059e5e.jpg',
   ],
 
   urgencyBar: '🎈 Festival Internacional de Balonismo em Torres/RS — Vagas limitadas por voo. Reserve antes que esgotem.',
@@ -188,25 +185,25 @@ const FESTIVAL = {
       text:   '"Ver 110 balões no céu enquanto eu estava dentro de um deles foi surreal. Não tem como descrever com palavras. Vai fazer de tudo para viver isso."',
       name:   'Ana Paula Machado',
       detail: 'Viajou com o marido — Festival de Torres',
-      img:    'https://rosadosventosbalonismo.com/wp-content/uploads/2026/02/9122EE30-58D0-4772-B381-DAD8F08A55DC.png',
+      img:    'assets/img/brand/logo-rosa-dos-ventos-balonismo.png',
     },
     {
       text:   '"Minha namorada chorou de emoção quando o sol nasceu lá de cima. Eu também. Foi o melhor presente que já dei na vida."',
       name:   'Lucas Ferreira',
       detail: 'Surpresa no aniversário da namorada',
-      img:    'https://rosadosventosbalonismo.com/wp-content/uploads/2026/02/67108654-8E10-4A54-8451-46529678BC24.jpg',
+      img:    'assets/img/brand/logo-rosa-dos-ventos-balonismo.png',
     },
     {
       text:   '"Nunca pensei que seria tão tranquilo. O piloto transmitiu tanta segurança que eu relaxei em minutos. E aí foi só beleza e emoção do começo ao fim."',
       name:   'Carla Duarte',
       detail: 'Primeira vez de balão — Torres/RS',
-      img:    'https://rosadosventosbalonismo.com/wp-content/uploads/2026/02/D701DA1F-73DD-4E43-9456-664A3FA01E6D.jpg',
+      img:    'assets/img/brand/logo-rosa-dos-ventos-balonismo.png',
     },
     {
       text:   '"Estava na minha lista de desejos há 8 anos. O festival foi o empurrão que precisava. Valeu muito mais do que o que paguei."',
       name:   'Roberto Alves',
       detail: 'Torres/RS — Festival 2025',
-      img:    'https://rosadosventosbalonismo.com/wp-content/uploads/2026/02/267DAD55-8871-4D58-9AD4-09C43B4F48DD.jpg',
+      img:    'assets/img/brand/logo-rosa-dos-ventos-balonismo.png',
     },
   ],
 

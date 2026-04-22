@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   initNav();
   initSlideshow('hero-slideshow', SITE.heroSlides, 5000);
-  initSlideshow('cta-banner-bg', SITE.heroSlides, 5500);
+  initSlideshow('cta-banner-bg', SITE.ctaSlides, 5500);
   renderPackages();
   renderSteps();
   renderExperiences();
